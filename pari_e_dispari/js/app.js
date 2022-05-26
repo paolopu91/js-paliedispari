@@ -31,6 +31,11 @@ titoloBot.innerHTML = `<h2 class="text-center text-danger">BOT</h2>`
 const askUtentePariDispari = prompt ("Cosa scegli? Pari o Dispari?")
 console.log(askUtentePariDispari);
 
+// // metto a schermo la scelta del Player 
+// const RisultatoSceltaUtente = document.getElementById ('sceltaUtente');
+// RisultatoSceltaUtente.innerHTML = `<h4 class="text-center">La sua scelta è ${askUtentePariDispari}</h4>`;
+
+
 // chiedere al player di scegliere un numero tra 1 e 5
 let askUtenteNumero = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"));
 console.log(askUtenteNumero)
@@ -50,10 +55,10 @@ numeroRandomBot()
 let somma = askUtenteNumero + numeroRandomBot();
 console.log(somma);
 
-const totale = document.getElementById('result')
+const totale = document.getElementById('result');
 totale.innerHTML = `<p class="text-center text-green">La somma Totale è ${somma}</p>`
 
-if(askUtenteNumero %2 === 0){
+if(somma %2 === 0){
     console.log("Ha vinto Pari")
 } else {
     console.log ("ha vinto Dispari")
