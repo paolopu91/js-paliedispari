@@ -34,17 +34,31 @@ console.log(askUtentePariDispari);
 // chiedere al player di scegliere un numero tra 1 e 5
 let askUtenteNumero = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"));
 console.log(askUtenteNumero)
-askUtenteNumero.innerHTML
 
-let numeroBot =
 
-function numeroRandomBot (numeroBot){
-    const numeroBotCasuale = Math.round(Math.random() * 5)+1;
+// let numeroBot = ('');
 
+function numeroRandomBot () {
+    const numeroBotCasuale = Math.round(Math.random() * 5);
+    console.log(numeroBotCasuale);
     
-    return numeroBotCasuale
-    
+    return numeroBotCasuale;  
 }
+
+numeroRandomBot()
+
+let somma = askUtenteNumero + numeroRandomBot();
+console.log(somma);
+
+const totale = document.getElementById('result')
+totale.innerHTML = `<p class="text-center text-green">La somma Totale è ${somma}</p>`
+
+if(askUtenteNumero %2 === 0){
+    console.log("Ha vinto Pari")
+} else {
+    console.log ("ha vinto Dispari")
+}
+
 
 
 })
