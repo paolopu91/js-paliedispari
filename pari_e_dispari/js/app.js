@@ -10,5 +10,10 @@ Dichiariamo chi ha vinto. Se l’utente aveva scelto pari e la somma è pari, ha
 Passaggi da fare:
 -Chiedere all'utente di scegliere tra pari o dispari
 -Chiedere all'utente di inserite un numero da 1 a 5
--generare un numero random
+-generare un numero random  per il Bot usando una funzione(compreso tra 1 e 5)
+-Sommare il numero utente e il numero del bot
+-dare il risultato della somma
+-vedere se la somma è pari o dispari
+-Dichiarare il vincitore.
 */
+
