@@ -17,3 +17,34 @@ Passaggi da fare:
 -Dichiarare il vincitore.
 */
 
+const myButton = document.getElementById('myButton');
+// al click sul button il nostro gioco inizierà a funzionare
+myButton.addEventListener("click", function() {
+
+//divido il mio campo di gioco in due col per facilitare la visione dei numeri al giocatore
+const titoloPlayer = document.getElementById('UTENTE')
+titoloPlayer.innerHTML = `<h2 class="text-center text-primary">PLAYER</h2>`
+const titoloBot = document.getElementById('BOT')
+titoloBot.innerHTML = `<h2 class="text-center text-danger">BOT</h2>`
+
+//Chiedo all'utente di inserire la sua preferenza di gioco
+const askUtentePariDispari = prompt ("Cosa scegli? Pari o Dispari?")
+console.log(askUtentePariDispari);
+
+// chiedere al player di scegliere un numero tra 1 e 5
+let askUtenteNumero = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"));
+console.log(askUtenteNumero)
+askUtenteNumero.innerHTML
+
+let numeroBot =
+
+function numeroRandomBot (numeroBot){
+    const numeroBotCasuale = Math.round(Math.random() * 5)+1;
+
+    
+    return numeroBotCasuale
+    
+}
+
+
+})
