@@ -32,8 +32,8 @@ const askUtentePariDispari = prompt ("Cosa scegli? Pari o Dispari?")
 console.log(askUtentePariDispari);
 
 // // metto a schermo la scelta del Player 
-// const RisultatoSceltaUtente = document.getElementById ('sceltaUtente');
-// RisultatoSceltaUtente.innerHTML = `<h4 class="text-center">La sua scelta è ${askUtentePariDispari}</h4>`;
+const RisultatoSceltaUtente = document.getElementById ('sceltaUtente');
+RisultatoSceltaUtente.innerHTML = `<h4 class="text-center">La sua scelta è ${askUtentePariDispari}</h4>`;
 
 
 // chiedere al player di scegliere un numero tra 1 e 5
@@ -59,11 +59,13 @@ const totale = document.getElementById('result');
 totale.innerHTML = `<p class="text-center text-green">La somma Totale è ${somma}</p>`
 
 if(somma %2 === 0){
+    let risultatoPari = document.getElementById('vincitore');
+    risultatoPari.innerHTML = `<h4>Ha vinto Pari ${somma}</h4>`
     console.log("Ha vinto Pari")
 } else {
+    let risultatoDispari = document.getElementById('vincitore');
+    risultatoDispari.innerHTML = `<h4>Ha vinto dispari ${somma}</h4>`;
     console.log ("ha vinto Dispari")
 }
-
-
 
 })
